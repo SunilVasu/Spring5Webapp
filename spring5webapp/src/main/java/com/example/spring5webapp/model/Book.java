@@ -1,4 +1,4 @@
-package com.example.spring5webapp.modal;
+package com.example.spring5webapp.model;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -12,8 +12,8 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToOne;
 
-import com.example.spring5webapp.modal.Author;
-import com.example.spring5webapp.modal.Publisher;;
+import com.example.spring5webapp.model.Author;
+import com.example.spring5webapp.model.Publisher;;
 
 @Entity
 public class Book {
@@ -49,6 +49,14 @@ public class Book {
 		this.authors = authors;
 	}
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+	
 	public String getTitle() {
 		return title;
 	}

@@ -1,8 +1,8 @@
-package com.example.spring5webapp.modal.repository;
+package com.example.spring5webapp.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.example.spring5webapp.modal.Author;
+import com.example.spring5webapp.model.Author;
 
 public interface AuthorRepository extends CrudRepository<Author, Long>{
 

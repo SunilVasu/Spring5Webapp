@@ -4,12 +4,12 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
-import com.example.spring5webapp.modal.Author;
-import com.example.spring5webapp.modal.Book;
-import com.example.spring5webapp.modal.Publisher;
-import com.example.spring5webapp.modal.repository.AuthorRepository;
-import com.example.spring5webapp.modal.repository.BookRepository;
-import com.example.spring5webapp.modal.repository.PublisherRepository;
+import com.example.spring5webapp.model.Author;
+import com.example.spring5webapp.model.Book;
+import com.example.spring5webapp.model.Publisher;
+import com.example.spring5webapp.repositories.AuthorRepository;
+import com.example.spring5webapp.repositories.BookRepository;
+import com.example.spring5webapp.repositories.PublisherRepository;
 
 @Component
 public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent>{

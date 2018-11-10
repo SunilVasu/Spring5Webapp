@@ -1,4 +1,4 @@
-package com.example.spring5webapp.modal;
+package com.example.spring5webapp.model;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -36,6 +36,14 @@ public class Author {
 		this.books = books;
 	}
 	
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+    
 	public String getFirstName() {
 		return firstName;
 	}
