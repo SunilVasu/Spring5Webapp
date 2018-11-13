@@ -1,2 +1,0 @@
-Make sure JDBC URL is
-jdbc:h2:mem:testdb
